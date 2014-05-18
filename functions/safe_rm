@@ -1,9 +1,9 @@
 # Makes rm safe
 safe_rm () 
 { 
-	mv $* ~/.local/share/Trash/files/ && $exit_status = $? &> /dev/null
+	mv $* ~/.local/share/Trash/files/ &> /dev/null
 
-	if [[ $exit_status -ne 0 ]] then 
+	if [[ $? -ne 0 ]] then 
 		echo "needs sudo"
 		sudo mv $* ~/.local/share/Trash/files/
 	fi

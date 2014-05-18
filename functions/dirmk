@@ -1,12 +1,13 @@
 # Makes a dir and changes directory into it
 dirmk() {
-	mkdir $1 && $exit_status = $? &> /dev/null
+	mkdir $1 &> /dev/null
 	
-	if [[ $exit_status -ne 0 ]] then 
-		echo "needs sudo"
+	if [[ $? -ne 0 ]] then 
 		sudo mkdir $1
 	fi
-	
-	cd $1
+
+	if [[ $? -eq 0 ]] then
+		cd $1
+	fi
 }
-alias mk='dirmk'
+alias mk='dirmk '

@@ -1,0 +1,12 @@
+# Tries to execute command as the user if it has a non 0 exit code it will attept to run it again as sudo
+try()
+{
+	$*
+	
+	if [[ $? -ne 0 ]] then 
+		echo "needs sudo"
+		sudo $*
+	fi
+
+}
+alias try='try '

@@ -10,5 +10,5 @@ alias tl="tree -L 3 | lolcat"
 #safe rm
 alias rm='safe_rm '
 
-#unsafe rm
-alias rmf="/usr/bin/rm "
+#unsafe rm; remove really 
+alias rmr="/usr/bin/rm "
