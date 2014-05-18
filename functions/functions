@@ -1,0 +1,4 @@
+source ~/.files/functions/safe_rm
+source ~/.files/functions/bell
+source ~/.files/functions/rationalise-dot
+source ~/.files/functions/dirmk

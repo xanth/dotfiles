@@ -1,0 +1,11 @@
+# Notifies the user of the exit code of a command, good for long running commands
+bell()
+{
+	"$@"
+	if (( $? == 0 )) then
+		cvlc ~/.files/functions/jobs_done.mp3 vlc://quit &> /dev/null
+	else 
+		cvlc ~/.files/functions/villagers_die.mp3 vlc://quit &> /dev/null
+	fi
+}
+alias b='bell'
