@@ -1,0 +1,1 @@
+/home/xanth/.zshrc
