@@ -1,0 +1,8 @@
+# Makes a new file and opens it in an editor
+new() {
+	touch $@
+	
+	if [[ $? -eq 0 ]] then
+		$NEW_EDITOR "${@: -1}"
+	fi
+}

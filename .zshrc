@@ -31,6 +31,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# new function text editor
+export NEW_EDITOR="subl"
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/xanth/.zshrc'
 autoload -Uz compinit

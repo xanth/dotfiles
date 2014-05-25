@@ -3,3 +3,5 @@ source ~/.files/functions/bell
 source ~/.files/functions/rationalise-dot
 source ~/.files/functions/dirmk
 source ~/.files/functions/try
+source ~/.files/functions/new
+. /usr/bin/z.sh
