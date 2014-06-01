@@ -3,9 +3,9 @@ bell()
 {
 	"$@"
 	if (( $? == 0 )) then
-		cvlc ~/.files/functions/jobs_done.mp3 vlc://quit &> /dev/null
+		mpv ~/.files/functions/jobs_done.mp3 &> /dev/null
 	else 
-		cvlc ~/.files/functions/villagers_die.mp3 vlc://quit &> /dev/null
+		mpv ~/.files/functions/villagers_die.mp3 &> /dev/null
 	fi
 }
 alias b='bell'
