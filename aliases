@@ -1,14 +1,17 @@
 # Aliases
 
 #101 ways to say do my bidding
-alias s="sudo "
-alias please="sudo "
+alias s='sudo '
+alias please='sudo '
 #Show my dir tree
-alias t="tree -LC 3"
-alias tl="tree -L 3 | lolcat"
+alias t='tree -LC 3'
+alias tl='tree -L 3 | lolcat'
 
 #safe rm
 alias rm='safe_rm '
 
 #unsafe rm; remove really 
-alias rmr="/usr/bin/rm "
+alias rmr='/usr/bin/rm '
+
+#git clone
+alias clone='git clone ' 

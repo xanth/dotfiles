@@ -1,10 +1,20 @@
 # Makes rm safe
 safe_rm () 
-{ 
-	mv $* ~/.local/share/Trash/files/ &> /dev/null
+{
+	name="$1"
+	if [[ -e ~/.local/share/Trash/files/$name ]] then
+		echo "Duplicate file in trash"
+		(( i = 1 ))
+		while [[ -e ~/.local/share/Trash/files/$1$((i)) ]]; do
+			(( i += 1 ))
+		done
+		name="$1$i"
+	fi
+	
+	mv $1 ~/.local/share/Trash/files/$name &> /dev/null
 
 	if [[ $? -ne 0 ]] then 
 		echo "needs sudo"
-		sudo mv $* ~/.local/share/Trash/files/
+		sudo mv $1 ~/.local/share/Trash/files/$name
 	fi
 }
