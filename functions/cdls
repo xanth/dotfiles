@@ -1,0 +1,6 @@
+# change into a dir and list files and dirs in it
+cdls() {
+        cd $1
+	ls
+}
+cdls='cdls '

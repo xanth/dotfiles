@@ -1,0 +1,9 @@
+# Makes a dir and changes rectory into it
+dirmk() {
+	mkdir $1
+	
+	if [[ $? -eq 0 ]] then
+		cd $1
+	fi
+}
+alias mk='dirmk '
