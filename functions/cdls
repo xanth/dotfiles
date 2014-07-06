@@ -1,6 +1,11 @@
-# change into a dir and list files and dirs in it
-cdls() {
-        cd $1
-	ls
+# change into a dir and list non hiden items in it
+cd () {
+	builtin cd "$@"
+	val=`ls -1 | wc -l`;
+ 	
+	if (( $((val < 25)) )) then
+		ls
+	else
+		echo "$val items"
+	fi
 }
-cdls='cdls '

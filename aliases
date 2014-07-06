@@ -15,3 +15,6 @@ alias rmr='/usr/bin/rm '
 
 #git clone
 alias clone='git clone ' 
+
+#cdls 
+#alias cd='cdls '
