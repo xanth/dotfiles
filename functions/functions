@@ -5,4 +5,5 @@ source ~/.files/functions/dirmk
 source ~/.files/functions/try
 source ~/.files/functions/new
 source ~/.files/functions/sayMyName
+source ~/.files/functions/cdls
 . /usr/bin/z.sh
