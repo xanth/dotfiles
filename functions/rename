@@ -1,0 +1,17 @@
+# renames file or dir
+# usage;
+# $rn foo bar
+# rename the current dir
+# $rn . bar 
+renameIt() {
+	if [[ $1 == "." ]] then
+	originalName=${PWD##*/}
+	else 
+	originalName=$1
+	fi
+	
+	cd ..
+	mv $originalName $2
+	cd $2
+}
+alias rn='renameIt '
