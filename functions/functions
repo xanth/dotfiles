@@ -6,4 +6,5 @@ source ~/.files/functions/try
 source ~/.files/functions/new
 source ~/.files/functions/sayMyName
 source ~/.files/functions/cdls
+source ~/.files/functions/subl
 . /usr/bin/z.sh

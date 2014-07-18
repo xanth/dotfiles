@@ -10,11 +10,11 @@ alias tl='tree -L 3 | lolcat'
 #safe rm
 alias rm='safe_rm '
 
-#unsafe rm; remove really 
+#unsafe rm: remove really 
 alias rmr='/usr/bin/rm '
 
 #git clone
 alias clone='git clone ' 
 
-#cdls 
-#alias cd='cdls '
+#subl quit mode
+alias sub='quiet_subl '
