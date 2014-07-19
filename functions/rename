@@ -6,12 +6,15 @@
 renameIt() {
 	if [[ $1 == "." ]] then
 	originalName=${PWD##*/}
+	cd ..
 	else 
 	originalName=$1
 	fi
-	
-	cd ..
+		
 	mv $originalName $2
+	
+	if [[ -d $2 ]] then
 	cd $2
+	fi
 }
 alias rn='renameIt '
