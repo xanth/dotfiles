@@ -1,4 +1,4 @@
 cd ..
 mv dotfiles .files 
-ln .files/.zshrc .zshrc 
-ln .files/.ghci .ghci
+ln -f .files/.zshrc .zshrc 
+ln -f .files/.ghci .ghci
