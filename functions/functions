@@ -8,4 +8,3 @@ source ~/.files/functions/sayMyName
 source ~/.files/functions/cdls
 source ~/.files/functions/subl
 source ~/.files/functions/rename
-. /usr/bin/z.sh
